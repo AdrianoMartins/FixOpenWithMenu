@@ -10,5 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-    return NSApplicationMain(argc, (const char **)argv);
+    system("/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;");
+    
+    exit(0);
 }
